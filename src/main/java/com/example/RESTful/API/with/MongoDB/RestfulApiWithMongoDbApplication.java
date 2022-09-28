@@ -46,11 +46,11 @@ public class RestfulApiWithMongoDbApplication implements CommandLineRunner {
 		repository.save(new Customer("Amber", "Jenkins"));
 
 		// fetch all customers
-		System.out.println();
-		System.out.println("__________ Customers found with findAll(): __________");
-		for (Customer customer : repository.findAll()) {
-			System.out.println(customer);
-		}
-		System.out.println();
+//		System.out.println();
+//		System.out.println("__________ Customers found with findAll(): __________");
+//		for (Customer customer : repository.findAll()) {
+//			System.out.println(customer);
+//		}
+//		System.out.println();
 	}
 }

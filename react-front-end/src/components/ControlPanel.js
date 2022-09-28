@@ -2,7 +2,9 @@ import React from "react";
 
 const ControlPanel = () => {
     return (
-        <div></div>
+        <div id="control-panel">
+
+        </div>
     )
 }
 

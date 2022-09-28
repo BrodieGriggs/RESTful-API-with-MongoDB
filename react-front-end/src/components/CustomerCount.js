@@ -2,7 +2,9 @@ import React from 'react';
 
 const CustomerCount = ({ numOfCustomers }) => {
     return (
-        <h3>{numOfCustomers} Customers</h3>
+        <div id="customer-count">
+            <p>{numOfCustomers} Customers</p>
+        </div>
     )
 }
 

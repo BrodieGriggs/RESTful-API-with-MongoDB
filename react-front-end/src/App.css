@@ -4,8 +4,12 @@
   background-color: lightgrey;
   border: 1px solid black;
   display: grid;
-  grid-template-rows: 5fr 1fr 5fr;
+  grid-template-rows: 1fr 20px 1fr;
   gap: 10px;
+}
+
+#customer-count {
+  padding-left: 10px;
 }
 
 #customer-display {
@@ -18,11 +22,20 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.customer {
-  font-size: 15px;
-  padding: 10px;
-  height: 100px;
+.customer-info-wrapper {
+  height: 110px;
   overflow-x: hidden;
   word-break: break-all;
   max-width: 100%;
+}
+
+.customer-info {
+  padding: 5px;
+  font-size: 15px;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+.customer-info:hover {
+  border: 1px solid lightgray;
 }

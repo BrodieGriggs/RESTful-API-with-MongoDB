@@ -1,0 +1,28 @@
+#app {
+  width: 500px;
+  height: 800px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 5fr 1fr 5fr;
+  gap: 10px;
+}
+
+#customer-display {
+  margin: 10px;
+  border: 1px solid grey;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.customer {
+  font-size: 15px;
+  padding: 10px;
+  height: 100px;
+  overflow-x: hidden;
+  word-break: break-all;
+  max-width: 100%;
+}

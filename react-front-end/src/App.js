@@ -1,6 +1,10 @@
 import $ from "jquery";
 import React from "react";
 import './App.css';
+import CustomersDisplay from "./components/CustomersDisplay";
+import CustomerCount from "./components/CustomerCount";
+import ControlPanel from "./components/ControlPanel";
+
 
 const App = () => {
 
@@ -28,18 +32,10 @@ const App = () => {
     })
 
     return (
-        <div>
-            {customerList.map((customer, idx) => {
-                if(customer === undefined) { return; }
-                return (
-                    <div id="customer" key={idx}>
-                        <h3>Customer {idx + 1}</h3>
-                        <p>id: {customer.id}</p>
-                        <p>First Name: {customer.firstName}</p>
-                        <p>Last Name: {customer.lastName}</p>
-                    </div>
-                )
-            })}
+        <div id="app">
+            <ControlPanel />
+            <CustomerCount numOfCustomers={customerList.length} />
+            <CustomersDisplay customerList={customerList} />
         </div>
     )
 }

@@ -7,8 +7,8 @@ const CustomersDisplay = ({ customerList }) => {
             {customerList.map((customer, idx) => {
                 if(customer === undefined) { return; }
                 return (
-                    <div className="customer-info-wrapper">
-                        <CustomerInfo key={idx} idx={idx} customer={customer} />
+                    <div key={idx} className="customer-info-wrapper">
+                        <CustomerInfo idx={idx} customer={customer} />
                     </div>
                 )
             })}

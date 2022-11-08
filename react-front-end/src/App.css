@@ -8,6 +8,10 @@
   gap: 10px;
 }
 
+#control-panel {
+  margin: 10px;
+}
+
 #customer-count {
   padding-left: 10px;
 }
@@ -23,7 +27,7 @@
 }
 
 .customer-info-wrapper {
-  height: 110px;
+  height: 80px;
   overflow-x: hidden;
   word-break: break-all;
   max-width: 100%;
@@ -31,7 +35,7 @@
 
 .customer-info {
   padding: 5px;
-  font-size: 15px;
+  font-size: 12px;
   margin: 10px;
   border: 1px solid white;
 }

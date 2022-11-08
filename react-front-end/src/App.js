@@ -8,11 +8,11 @@ import ControlPanel from "./components/ControlPanel";
 
 const App = () => {
 
-    const [customerList, setCustomerList] = React.useState([undefined]);
+    const [customerList, setCustomerList] = React.useState([]);
 
     const getCustomerList = () => {
         $.ajax({
-            url: "http://localhost:8080/customers",
+            url: "http://localhost:8080/customers/get-all",
             type: "GET",
             crossDomain: true,
             crossOrigin: true,
@@ -28,12 +28,12 @@ const App = () => {
     }
     
     React.useEffect(() => {
-        if(customerList[0] === undefined) { getCustomerList(); } 
+        if(customerList.length === 0) { getCustomerList(); } 
     })
 
     return (
         <div id="app">
-            <ControlPanel />
+            <ControlPanel updateCustomerList={getCustomerList}/>
             <CustomerCount numOfCustomers={customerList.length} />
             <CustomersDisplay customerList={customerList} />
         </div>

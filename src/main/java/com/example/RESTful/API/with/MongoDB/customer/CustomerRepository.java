@@ -1,6 +1,7 @@
 package com.example.RESTful.API.with.MongoDB.customer;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.support.SimpleMongoRepository;
 
 import java.util.List;
 
